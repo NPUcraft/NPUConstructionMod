@@ -1,7 +1,6 @@
 package com.npucraft.npuconstruction.Block;
 
-import com.npucraft.npuconstruction.Init.Register.MyItemRegister;
-import com.npucraft.npuconstruction.Init.Register.MyRegister;
+import com.npucraft.npuconstruction.Register.MyItemRegister;
 import com.npucraft.npuconstruction.Temperate.BlockTemperate.HalfSlabBlockT;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Material;

@@ -1,9 +1,8 @@
 package com.npucraft.npuconstruction;
 
-import com.npucraft.npuconstruction.Init.Init;
-import com.npucraft.npuconstruction.Init.Register.MyBlockEntityRegister;
-import com.npucraft.npuconstruction.Init.Register.MyBlockRegister;
-import com.npucraft.npuconstruction.Init.Register.MyItemRegister;
+import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyBlockRegister;
+import com.npucraft.npuconstruction.Register.MyItemRegister;
 import net.fabricmc.api.ModInitializer;
 
 

@@ -1,6 +1,6 @@
 package com.npucraft.npuconstruction.BlockEntity.Fan;
 
-import com.npucraft.npuconstruction.Init.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
 import net.minecraft.block.entity.BlockEntity;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;

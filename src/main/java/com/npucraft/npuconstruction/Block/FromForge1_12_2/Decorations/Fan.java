@@ -1,7 +1,7 @@
 package com.npucraft.npuconstruction.Block.FromForge1_12_2.Decorations;
 
 
-import com.npucraft.npuconstruction.Init.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
 import com.npucraft.npuconstruction.Temperate.BlockTemperate.DirectionFacingBlock.DirectionFacingBlockT;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;

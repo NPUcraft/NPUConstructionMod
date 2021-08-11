@@ -1,6 +1,6 @@
 package com.npucraft.npuconstruction;
 
-import com.npucraft.npuconstruction.Init.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.Block;
@@ -32,7 +32,7 @@ public class NPUConstructionClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), translucentBlockList);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), cutoutBlockList);
-        
+
 
     }
 

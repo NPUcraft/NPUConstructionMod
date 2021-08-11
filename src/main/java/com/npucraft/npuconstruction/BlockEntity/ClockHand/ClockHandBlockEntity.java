@@ -1,10 +1,9 @@
 package com.npucraft.npuconstruction.BlockEntity.ClockHand;
 
-import com.npucraft.npuconstruction.Init.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.entity.BlockEntity;
-import org.spongepowered.asm.mixin.Overwrite;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.controller.AnimationController;

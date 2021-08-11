@@ -1,4 +1,4 @@
-package com.npucraft.npuconstruction.Init.Register;
+package com.npucraft.npuconstruction.Register;
 
 import com.npucraft.npuconstruction.BlockEntity.ClockHand.ClockHandBlockEntity;
 import com.npucraft.npuconstruction.BlockEntity.ClockHand.Render.ClockHandRenderer;

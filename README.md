@@ -3,7 +3,7 @@
 
 #此处以IntelliJ IDEA为例
 
-1.Fil-New-Project from existing source
+1.File-New-Project from existing source
 
 2.选择build.gradle，确认
 

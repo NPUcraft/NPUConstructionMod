@@ -1,0 +1,31 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.fan.roate1": {
+			"loop": true,
+			"animation_length": 15,
+			"bones": {
+				"outside": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"15.0": {
+							"vector": [0, -360, 0]
+						}
+					}
+				},
+				"fan": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"15.0": {
+							"vector": [0, "360*30", 0]
+						}
+					}
+				}
+			}
+		}
+	}
+}

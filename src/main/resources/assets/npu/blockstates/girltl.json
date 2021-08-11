@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/girltl"
+        },
+        "facing=east": {
+            "model": "npu:block/girltl",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/girltl",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/girltl",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

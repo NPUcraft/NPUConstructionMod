@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.npucraft.npuconstruction.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "NPUConstructionMixin",
+    "BlockEntityMixin"
+  ],
+  "client": [
+    "NPUConstructionMixin",
+    "BlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

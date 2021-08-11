@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/fgirldoor"
+        },
+        "facing=east": {
+            "model": "npu:block/fgirldoor",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/fgirldoor",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/fgirldoor",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

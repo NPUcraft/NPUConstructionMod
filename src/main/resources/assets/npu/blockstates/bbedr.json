@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/bbedr"
+        },
+        "facing=east": {
+            "model": "npu:block/bbedr",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/bbedr",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/bbedr",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

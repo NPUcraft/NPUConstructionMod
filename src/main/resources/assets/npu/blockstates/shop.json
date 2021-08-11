@@ -1,0 +1,20 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/shop",
+            "y": 90
+        },
+        "facing=east": {
+            "model": "npu:block/shop",
+            "y": 90
+        },
+        "facing=south": {
+            "model": "npu:block/shop",
+            "y": 180
+        },
+        "facing=west": {
+            "model": "npu:block/shop",
+            "y": 270
+        }
+    }
+}

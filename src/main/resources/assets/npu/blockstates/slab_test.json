@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "npu:block/slab_test"
+    },
+    "type=double": {
+      "model": "npu:block/slab_test_double"
+    },
+    "type=top": {
+      "model": "npu:block/slab_test_top"
+    }
+  }
+}

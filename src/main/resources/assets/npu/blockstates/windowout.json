@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/windowout"
+        },
+        "facing=east": {
+            "model": "npu:block/windowout",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/windowout",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/windowout",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

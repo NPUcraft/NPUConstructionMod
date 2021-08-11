@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/sdframe"
+        },
+        "facing=east": {
+            "model": "npu:block/sdframe",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/sdframe",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/sdframe",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/urinal"
+        },
+        "facing=east": {
+            "model": "npu:block/urinal",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/urinal",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/urinal",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

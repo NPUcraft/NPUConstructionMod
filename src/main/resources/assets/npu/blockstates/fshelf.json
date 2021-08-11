@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/fshelf"
+        },
+        "facing=east": {
+            "model": "npu:block/fshelf",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/fshelf",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/fshelf",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

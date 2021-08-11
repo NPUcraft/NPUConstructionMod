@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "npu:block/slab_test",
+    "top": "npu:block/slab_test",
+    "side": "npu:block/slab_test_side"
+  }
+}

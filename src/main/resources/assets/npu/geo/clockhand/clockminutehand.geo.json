@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.clockhand",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "secondhand",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 0, 0], "size": [3, 32, 1], "uv": [0, 0]},
+						{"origin": [-1, 32, 0], "size": [2, 8, 1], "uv": [0, 0]},
+						{"origin": [-0.5, 40, 0], "size": [1, 8, 1], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

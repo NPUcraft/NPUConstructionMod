@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/pavilion/pavilion146"
+        },
+        "facing=east": {
+            "model": "npu:block/pavilion/pavilion146",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/pavilion/pavilion146",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/pavilion/pavilion146",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

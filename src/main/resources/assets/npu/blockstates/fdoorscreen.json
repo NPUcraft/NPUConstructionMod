@@ -1,0 +1,22 @@
+{
+    "variants": {
+        "facing=north": {
+            "model": "npu:block/fdoorscreen"
+        },
+        "facing=east": {
+            "model": "npu:block/fdoorscreen",
+            "y": 90,
+            "uvlock": false
+        },
+        "facing=south": {
+            "model": "npu:block/fdoorscreen",
+            "y": 180,
+            "uvlock": false
+        },
+        "facing=west": {
+            "model": "npu:block/fdoorscreen",
+            "y": 270,
+            "uvlock": false
+        }
+    }
+}

@@ -1,5 +1,7 @@
 # NPUConstructionMod
 复原工程Fabric版Mod
+当前最新版本Frabirc 1.16.5
+
 
 #此处以IntelliJ IDEA为例
 

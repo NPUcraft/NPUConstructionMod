@@ -1,11 +1,11 @@
-# NPUConstructionMod
-复原工程Fabric版Mod
+# NPUConstructionMod复原工程Mod
 
 
-当前最新版本Frabirc 1.16.5
+
+# 当前最新版本Frabirc 1.16.5
 
 
-#此处以IntelliJ IDEA为例
+# 此处以IntelliJ IDEA为例
 
 1.File-New-Project from existing source
 

@@ -19,7 +19,7 @@ import net.minecraft.world.BlockView;
 public class Plant2 extends DirectionFacingCutoutBlockT {
 
     public Plant2() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(2));
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 

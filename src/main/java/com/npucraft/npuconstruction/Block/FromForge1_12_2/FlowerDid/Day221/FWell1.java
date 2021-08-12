@@ -1,7 +1,6 @@
 package com.npucraft.npuconstruction.Block.FromForge1_12_2.FlowerDid.Day221;
 
-
-import com.npucraft.npuconstruction.Temperate.BlockTemperate.DirectionFacingBlock.DirectionFacingBlockT;
+import com.npucraft.npuconstruction.Temperate.BlockTemperate.DirectionFacingBlock.DirectionFacingCutoutBlockT;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Material;
 import net.minecraft.state.property.Properties;
@@ -16,7 +15,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 
-public class FWell1 extends DirectionFacingBlockT {
+public class FWell1 extends DirectionFacingCutoutBlockT {
 
     public FWell1() {
         super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));

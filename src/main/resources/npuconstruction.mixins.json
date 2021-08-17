@@ -4,10 +4,8 @@
   "package": "com.npucraft.npuconstruction.mixin",
   "compatibilityLevel": "JAVA_16",
   "mixins": [
-    "BlockEntityMixin"
   ],
   "client": [
-    "BlockEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

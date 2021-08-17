@@ -17,11 +17,9 @@ public class NPUConstructionClient implements ClientModInitializer {
     public void onInitializeClient() {
         addTranslucentCutoutBlocks();
         addBlockEntityRender();
-
     }
 
     private static void addBlockEntityRender(){
-//        BlockEntityRendererRegistry.INSTANCE.register(ClockHandBlockEntity.BlockEntity, ClockHandBlockEntityRenderer::new);
         MyBlockEntityRegister.registerRenderer();
     }
 
@@ -32,9 +30,6 @@ public class NPUConstructionClient implements ClientModInitializer {
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), translucentBlockList);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), cutoutBlockList);
-
-
     }
-
 
 }

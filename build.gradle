@@ -43,6 +43,7 @@ dependencies {
 	include "dev.monarkhes:myron:1.6.0"
 
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.16.5:3.0.45:dev'
+//	include "software.bernie.geckolib:geckolib-fabric-1.16.5:3.0.45:dev"
 }
 
 processResources {
@@ -72,6 +73,8 @@ java {
 }
 
 jar {
+
+
 	from("LICENSE") {
 		rename { "${it}_${project.archivesBaseName}"}
 	}

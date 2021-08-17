@@ -1431,10 +1431,6 @@ public class MyItemRegister {
             new Identifier("npu", "yf9"), new BlockItem(MyBlockRegister.YF9, NPU_GROUP_SETTING));
 
 
-    public static final BlockItem CLOCK_HAND_ITEM = Registry.register(Registry.ITEM,
-            new Identifier("npu", "clockhand"), new BlockItem(MyBlockRegister.CLOCK_HAND, NPU_GROUP_SETTING));
-
-
     public static final BlockItem PAVILION006_ITEM = Registry.register(Registry.ITEM,
             new Identifier("npu", "pavilion006"), new BlockItem(MyBlockRegister.PAVILION006, NPU_PAVILION_SETTING));
     public static final BlockItem PAVILION007_ITEM = Registry.register(Registry.ITEM,
@@ -1655,5 +1651,11 @@ public class MyItemRegister {
             new Identifier("npu", "pavilion671"), new BlockItem(MyBlockRegister.PAVILION671, NPU_PAVILION_SETTING));
     public static final BlockItem PAVILION672_ITEM = Registry.register(Registry.ITEM,
             new Identifier("npu", "pavilion672"), new BlockItem(MyBlockRegister.PAVILION672, NPU_PAVILION_SETTING));
+
+    public static final BlockItem ARJ_ITEM = Registry.register(Registry.ITEM,
+            new Identifier("npu", "arj"), new BlockItem(MyBlockRegister.ARJ, NPU_VEHICLE_SETTING));
+
+    public static final BlockItem CLOCK_HAND_ITEM = Registry.register(Registry.ITEM,
+            new Identifier("npu", "clockhand"), new BlockItem(MyBlockRegister.CLOCK_HAND, NPU_GROUP_SETTING));
 
 }

@@ -56,6 +56,7 @@ import com.npucraft.npuconstruction.Block.FromForge1_12_2.Windows.White.*;
 import com.npucraft.npuconstruction.Block.FromForge1_12_2.YF.*;
 
 import com.npucraft.npuconstruction.Block.Pavilion.*;
+import com.npucraft.npuconstruction.Block.Vehicle.*;
 
 public class MyBlockRegister {
     // BBed
@@ -1459,12 +1460,6 @@ public class MyBlockRegister {
             new Identifier("npu", "yf9"), new YF9());
 
 
-
-
-    public static final ClockHand CLOCK_HAND = Registry.register(Registry.BLOCK,
-            new Identifier("npu", "clockhand"), new ClockHand());
-
-
     public static final Pavilion006 PAVILION006 = Registry.register(Registry.BLOCK,
             new Identifier("npu", "pavilion006"), new Pavilion006());
     public static final Pavilion007 PAVILION007 = Registry.register(Registry.BLOCK,
@@ -1686,4 +1681,10 @@ public class MyBlockRegister {
     public static final Pavilion672 PAVILION672 = Registry.register(Registry.BLOCK,
             new Identifier("npu", "pavilion672"), new Pavilion672());
 
+
+    public static final ClockHand CLOCK_HAND = Registry.register(Registry.BLOCK,
+            new Identifier("npu", "clockhand"), new ClockHand());
+
+    public static final ARJ ARJ = Registry.register(Registry.BLOCK,
+            new Identifier("npu", "arj"), new ARJ());
 }

@@ -19,7 +19,7 @@ import net.minecraft.world.BlockView;
 public class FLine1 extends DirectionFacingBlockT {
 
     public FLine1() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(15));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 

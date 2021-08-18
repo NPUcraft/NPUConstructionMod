@@ -1,43 +1,35 @@
 package com.npucraft.npuconstruction.Block.FromForge1_12_2.FlowerDid.Others;
 
 
-import com.npucraft.npuconstruction.Temperate.BlockTemperate.DirectionFacingBlock.DirectionFacingBlockT;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Material;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.Direction;
-
 import com.npucraft.npuconstruction.Data.BlockShapeData.FromForge1_12_2.Fgirltl1_Data;
+import com.npucraft.npuconstruction.Temperate.BlockTemperate.HorizontalFacingBlock.HorizontalFacingBlockT;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 
-public class FGirlTL1 extends DirectionFacingBlockT {
+public class FGirlTL1 extends HorizontalFacingBlockT {
 
     public FGirlTL1() {
         super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
-        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 
-	@Override
-	public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context){
-		Direction dir = state.get(FACING);
-		switch(dir) {
-			case NORTH:
-				return Fgirltl1_Data.getNORTH();
-			case SOUTH:
-				return Fgirltl1_Data.getSOUTH();
-			case EAST:
-				return Fgirltl1_Data.getEAST();
-			case WEST:
-				return Fgirltl1_Data.getWEST();
-			default:
-				return VoxelShapes.fullCube();
-		}
-	}
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        Direction dir = state.get(FACING);
+        return switch (dir) {
+            case NORTH -> Fgirltl1_Data.getNORTH();
+            case SOUTH -> Fgirltl1_Data.getSOUTH();
+            case EAST -> Fgirltl1_Data.getEAST();
+            case WEST -> Fgirltl1_Data.getWEST();
+            default -> VoxelShapes.fullCube();
+        };
+    }
 
 }

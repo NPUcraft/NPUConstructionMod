@@ -29,7 +29,6 @@ public class MyItemRegister {
     public static final Item.Settings NPU_PAVILION_SETTING = new Item.Settings().group(NPU_PAVILION);
 
 
-
     // BBed
     public static final BlockItem BBED2L_ITEM = Registry.register(Registry.ITEM,
             new Identifier("npu", "bbed2l"), new BlockItem(MyBlockRegister.BBED2L, NPU_GROUP_SETTING));

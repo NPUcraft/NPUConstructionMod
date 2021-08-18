@@ -1,17 +1,16 @@
 package com.npucraft.npuconstruction;
 
+import com.npucraft.npuconstruction.BlockEntity.ClockHand.Render.ClockHandRenderer;
+import com.npucraft.npuconstruction.BlockEntity.Fan.FanRenderer;
 import com.npucraft.npuconstruction.Register.MyBlockEntityRegister;
+import com.npucraft.npuconstruction.Register.MyRegister;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendereregistry.v1.BlockEntityRendererRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class NPUConstructionClient implements ClientModInitializer {
-    public static List<Block> translucentBlocks = new ArrayList<Block>();
-    public static List<Block> cutoutBlocks = new ArrayList<Block>();
 
     @Override
     public void onInitializeClient() {
@@ -19,14 +18,16 @@ public class NPUConstructionClient implements ClientModInitializer {
         addBlockEntityRender();
     }
 
-    private static void addBlockEntityRender(){
-        MyBlockEntityRegister.registerRenderer();
+    private static void addBlockEntityRender() {
+        // register BlockEntityRenderer
+        BlockEntityRendererRegistry.INSTANCE.register(MyBlockEntityRegister.CLOCK_HAND_BLOCK_ENTITY_BLOCK_ENTITY_TYPE, ClockHandRenderer::new);
+        BlockEntityRendererRegistry.INSTANCE.register(MyBlockEntityRegister.FAN_BLOCK_ENTITY_BLOCK_ENTITY_TYPE, FanRenderer::new);
     }
 
 
-    private static void addTranslucentCutoutBlocks(){
-        Block[] translucentBlockList = translucentBlocks.toArray(new Block[translucentBlocks.size()]);
-        Block[] cutoutBlockList = cutoutBlocks.toArray(new Block[cutoutBlocks.size()]);
+    private static void addTranslucentCutoutBlocks() {
+        Block[] translucentBlockList = MyRegister.translucentBlocks.toArray(new Block[MyRegister.translucentBlocks.size()]);
+        Block[] cutoutBlockList = MyRegister.cutoutBlocks.toArray(new Block[MyRegister.cutoutBlocks.size()]);
 
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getTranslucent(), translucentBlockList);
         BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), cutoutBlockList);

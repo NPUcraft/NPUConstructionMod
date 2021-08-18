@@ -1,44 +1,35 @@
 package com.npucraft.npuconstruction.Block.FromForge1_12_2.Lights;
 
 
-import com.npucraft.npuconstruction.Temperate.BlockTemperate.DirectionFacingBlock.DirectionFacingBlockT;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Material;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.math.Direction;
-
 import com.npucraft.npuconstruction.Data.BlockShapeData.FromForge1_12_2.Light3_Data;
+import com.npucraft.npuconstruction.Temperate.BlockTemperate.HorizontalFacingBlock.HorizontalFacingBlockT;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
 import net.minecraft.block.ShapeContext;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 
-public class Light3 extends DirectionFacingBlockT {
+public class Light3 extends HorizontalFacingBlockT {
 
     public Light3() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).
-				lightLevel(15));
-        setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(15));
     }
 
-	@Override
-	public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context){
-		Direction dir = state.get(FACING);
-		switch(dir) {
-			case NORTH:
-				return Light3_Data.getNORTH();
-			case SOUTH:
-				return Light3_Data.getSOUTH();
-			case EAST:
-				return Light3_Data.getEAST();
-			case WEST:
-				return Light3_Data.getWEST();
-			default:
-				return VoxelShapes.fullCube();
-		}
-	}
+    @Override
+    public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
+        Direction dir = state.get(FACING);
+        return switch (dir) {
+            case NORTH -> Light3_Data.getNORTH();
+            case SOUTH -> Light3_Data.getSOUTH();
+            case EAST -> Light3_Data.getEAST();
+            case WEST -> Light3_Data.getWEST();
+            default -> VoxelShapes.fullCube();
+        };
+    }
 
 }

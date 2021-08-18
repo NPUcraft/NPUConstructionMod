@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class SlabTest extends HalfSlabBlockT {
-    public SlabTest(){
+    public SlabTest() {
 
         super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
 

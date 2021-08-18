@@ -1,22 +1,40 @@
 {
-    "variants": {
-        "facing=north": {
-            "model": "npu:block/electric"
-        },
-        "facing=east": {
-            "model": "npu:block/electric",
-            "y": 90,
-            "uvlock": false
-        },
-        "facing=south": {
-            "model": "npu:block/electric",
-            "y": 180,
-            "uvlock": false
-        },
-        "facing=west": {
-            "model": "npu:block/electric",
-            "y": 270,
-            "uvlock": false
-        }
+  "variants": {
+    "facing=north,open=false": {
+      "model": "npu:block/electric"
+    },
+    "facing=north,open=true": {
+      "model": "npu:block/electric_opened"
+    },
+    "facing=east,open=false": {
+      "model": "npu:block/electric",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=east,open=true": {
+      "model": "npu:block/electric_opened",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south,open=false": {
+      "model": "npu:block/electric",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=south,open=true": {
+      "model": "npu:block/electric_opened",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west,open=false": {
+      "model": "npu:block/electric",
+      "y": 270,
+      "uvlock": false
+    },
+    "facing=west,open=true": {
+      "model": "npu:block/electric_opened",
+      "y": 270,
+      "uvlock": false
     }
+  }
 }

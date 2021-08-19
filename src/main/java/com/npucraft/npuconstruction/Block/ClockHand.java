@@ -6,6 +6,7 @@ import com.npucraft.npuconstruction.Temperate.BlockTemperate.HorizontalFacingBlo
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.util.shape.VoxelShapes;
@@ -22,7 +23,7 @@ public class ClockHand extends HorizontalFacingBlockT implements BlockEntityProv
     public VoxelShape getCollisionShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return VoxelShapes.fullCube();
     }
-    
+
     @Override
     public BlockRenderType getRenderType(BlockState blockState) {
         return BlockRenderType.ENTITYBLOCK_ANIMATED;
@@ -31,5 +32,10 @@ public class ClockHand extends HorizontalFacingBlockT implements BlockEntityProv
     @Override
     public BlockEntity createBlockEntity(BlockView blockView) {
         return MyBlockEntityRegister.CLOCK_HAND_BLOCK_ENTITY_BLOCK_ENTITY_TYPE.instantiate();
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        return this.getDefaultState().with(FACING, ctx.getPlayerFacing());
     }
 }

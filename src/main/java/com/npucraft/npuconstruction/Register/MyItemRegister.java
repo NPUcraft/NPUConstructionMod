@@ -14,7 +14,7 @@ public class MyItemRegister {
     // create ItemGroup
     public static final ItemGroup NPU_GROUP = FabricItemGroupBuilder.create(
             new Identifier("npu", "construction")).
-            icon(() -> new ItemStack(Blocks.COBBLESTONE)).build();
+            icon(() -> new ItemStack(MyBlockRegister.SHOP)).build();
 
     public static final ItemGroup NPU_VEHICLE = FabricItemGroupBuilder.create(
             new Identifier("npu", "vehicle")).
@@ -22,7 +22,7 @@ public class MyItemRegister {
 
     public static final ItemGroup NPU_PAVILION = FabricItemGroupBuilder.create(
             new Identifier("npu", "pavilion")).
-            icon(() -> new ItemStack(Blocks.RAIL)).build();
+            icon(() -> new ItemStack(MyBlockRegister.PAVILION335)).build();
 
     public static final Item.Settings NPU_GROUP_SETTING = new Item.Settings().group(NPU_GROUP);
     public static final Item.Settings NPU_VEHICLE_SETTING = new Item.Settings().group(NPU_VEHICLE);

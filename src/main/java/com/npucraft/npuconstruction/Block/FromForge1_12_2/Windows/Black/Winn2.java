@@ -2,7 +2,7 @@ package com.npucraft.npuconstruction.Block.FromForge1_12_2.Windows.Black;
 
 
 import com.npucraft.npuconstruction.Data.BlockShapeData.FromForge1_12_2.Winn2_Data;
-import com.npucraft.npuconstruction.Temperate.BlockTemperate.HorizontalFacingBlock.HorizontalFacingBlockT;
+import com.npucraft.npuconstruction.Temperate.BlockTemperate.HorizontalFacingBlock.HorizontalFacingTranslucentBlockT;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -14,7 +14,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 
-public class Winn2 extends HorizontalFacingBlockT {
+public class Winn2 extends HorizontalFacingTranslucentBlockT {
 
     public Winn2() {
         super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));

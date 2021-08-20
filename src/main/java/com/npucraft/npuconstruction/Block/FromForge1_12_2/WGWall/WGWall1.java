@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class WGWall1 extends HorizontalFacingBlockT {
 
     public WGWall1() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
     }
 
     @Override

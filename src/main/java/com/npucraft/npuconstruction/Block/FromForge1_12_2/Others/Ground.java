@@ -9,7 +9,7 @@ import net.minecraft.block.Material;
 public class Ground extends HorizontalFacingBlockT {
 
     public Ground() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
     }
 
 }

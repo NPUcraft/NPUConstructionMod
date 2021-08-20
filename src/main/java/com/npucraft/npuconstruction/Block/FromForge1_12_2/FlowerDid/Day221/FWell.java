@@ -16,7 +16,7 @@ import net.minecraft.world.BlockView;
 public class FWell extends HorizontalFacingCutoutBlockT {
 
     public FWell() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
     @Override

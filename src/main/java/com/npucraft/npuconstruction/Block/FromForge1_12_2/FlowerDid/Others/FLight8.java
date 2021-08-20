@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class FLight8 extends HorizontalFacingBlockT {
 
     public FLight8() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(15));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().nonOpaque().lightLevel(15));
     }
 
     @Override

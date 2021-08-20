@@ -12,7 +12,7 @@ import net.minecraft.world.BlockView;
 
 public class ARJ extends HorizontalFacingBlockT {
     public ARJ() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(6));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().nonOpaque().lightLevel(6));
     }
 
     @Override

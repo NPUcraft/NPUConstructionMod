@@ -26,7 +26,7 @@ import net.minecraft.world.World;
 public class Electric extends HorizontalFacingBlockT {
 
     public Electric() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH)
                 .with(Properties.OPEN, false));
     }

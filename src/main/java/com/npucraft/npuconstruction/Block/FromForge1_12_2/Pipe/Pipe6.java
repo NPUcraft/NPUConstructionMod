@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class Pipe6 extends HorizontalFacingBlockT {
 
     public Pipe6() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
     @Override

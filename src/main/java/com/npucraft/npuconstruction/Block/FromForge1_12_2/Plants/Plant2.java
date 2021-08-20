@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class Plant2 extends HorizontalFacingCutoutBlockT {
 
     public Plant2() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(2));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(2));
     }
 
     @Override

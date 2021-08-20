@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class DHall7 extends HorizontalFacingTranslucentBlockT {
 
     public DHall7() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(5));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(5));
     }
 
     @Override

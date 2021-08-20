@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class FTSigh extends HorizontalFacingBlockT {
 
     public FTSigh() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
     @Override

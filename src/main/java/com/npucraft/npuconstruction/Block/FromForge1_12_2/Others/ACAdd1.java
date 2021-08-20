@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class ACAdd1 extends HorizontalFacingBlockT {
 
     public ACAdd1() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(5));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(5));
     }
 
     @Override

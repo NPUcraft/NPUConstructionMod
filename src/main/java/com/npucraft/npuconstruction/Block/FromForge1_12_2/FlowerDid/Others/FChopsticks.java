@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class FChopsticks extends HorizontalFacingBlockT {
 
     public FChopsticks() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(3));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(3));
     }
 
     @Override

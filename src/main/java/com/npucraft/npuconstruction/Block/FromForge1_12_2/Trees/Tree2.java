@@ -15,7 +15,7 @@ import net.minecraft.world.BlockView;
 public class Tree2 extends HorizontalFacingBlockT {
 
     public Tree2() {
-        super(FabricBlockSettings.of(Material.WOOD).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.WOOD).hardness(4.0f).nonOpaque());
     }
 
     @Override

@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class Drink6 extends HorizontalFacingTranslucentBlockT {
 
     public Drink6() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(7));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(7));
     }
 
     @Override

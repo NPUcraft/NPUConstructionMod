@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class G31 extends HorizontalFacingBlockT {
 
     public G31() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
     @Override

@@ -19,7 +19,7 @@ public class HorizontalFacingBlockT extends Block {
     public static final DirectionProperty FACING;
 
     protected HorizontalFacingBlockT(Settings settings) {
-        super(settings.nonOpaque());
+        super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
     }
 

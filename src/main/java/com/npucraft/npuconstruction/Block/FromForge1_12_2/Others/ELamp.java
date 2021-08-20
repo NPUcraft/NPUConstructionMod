@@ -17,7 +17,7 @@ import net.minecraft.world.BlockView;
 public class ELamp extends HorizontalFacingBlockT {
 
     public ELamp() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).lightLevel(15));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque().lightLevel(15));
     }
 
     @Override

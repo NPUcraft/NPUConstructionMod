@@ -7,7 +7,7 @@ import net.minecraft.block.Material;
 public class FenceO extends FenceBlockT {
 
     public FenceO() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
 }

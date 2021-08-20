@@ -9,7 +9,7 @@ import net.minecraft.block.Material;
 public class ObsidianBlock extends HorizontalFacingBlockT {
 
     public ObsidianBlock() {
-        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f));
+        super(FabricBlockSettings.of(Material.METAL).hardness(4.0f).nonOpaque());
     }
 
 }

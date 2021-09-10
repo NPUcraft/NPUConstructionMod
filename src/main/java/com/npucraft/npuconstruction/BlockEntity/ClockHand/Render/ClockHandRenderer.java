@@ -1,7 +1,10 @@
 package com.npucraft.npuconstruction.BlockEntity.ClockHand.Render;
 
 import com.npucraft.npuconstruction.BlockEntity.ClockHand.ClockHandBlockEntity;
-import com.npucraft.npuconstruction.BlockEntity.ClockHand.Model.*;
+import com.npucraft.npuconstruction.BlockEntity.ClockHand.Model.ClockHandModel;
+import com.npucraft.npuconstruction.BlockEntity.ClockHand.Model.ClockHourHandModel;
+import com.npucraft.npuconstruction.BlockEntity.ClockHand.Model.ClockMinuteHandModel;
+import com.npucraft.npuconstruction.BlockEntity.ClockHand.Model.ClockSecondHandModel;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.FacingBlock;
 import net.minecraft.block.HorizontalFacingBlock;
@@ -78,11 +81,9 @@ public class ClockHandRenderer extends BlockEntityRenderer<ClockHandBlockEntity>
             rotateBlock(getFacing(tile), stack, 0, 0);
         }
 
-
         MinecraftClient.getInstance().getTextureManager().bindTexture(modelProvider.getTextureLocation(tile));
         Color renderColor = new Color(255, 255, 255, 255);
         RenderLayer renderType = RenderLayer.getEntityCutout(modelProvider.getTextureLocation(tile));
-
 
         render(model, tile, partialTicks, renderType, stack, bufferIn, null, packedLightIn,
                 OverlayTexture.DEFAULT_UV,
@@ -102,30 +103,12 @@ public class ClockHandRenderer extends BlockEntityRenderer<ClockHandBlockEntity>
         stack.translate(0.5, 0, 0.5);
 
         switch (getFacing(blockEntity)) {
-            case SOUTH -> {
-//                stack.translate(0, 0, 0.5);
-                stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180));
-            }
-            case WEST -> {
-//                stack.translate(-0.5, 0, 0);
-                stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(90));
-            }
-            case NORTH -> {
-//                stack.translate(0, 0, -0.5);
-                stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(0));
-            }
-            case EAST -> {
-//                stack.translate(0.5, 0, 0);
-                stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(270));
-            }
-            case UP -> {
-//                stack.translate(0, -0.5, 0);
-                stack.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(90));
-            }
-            case DOWN -> {
-//                stack.translate(0, 0.5, 0);
-                stack.multiply(Vec3f.NEGATIVE_X.getDegreesQuaternion(90));
-            }
+            case SOUTH -> stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180));
+            case WEST -> stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(90));
+            case NORTH -> stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(0));
+            case EAST -> stack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(270));
+            case UP -> stack.multiply(Vec3f.POSITIVE_X.getDegreesQuaternion(90));
+            case DOWN -> stack.multiply(Vec3f.NEGATIVE_X.getDegreesQuaternion(90));
         }
 
 

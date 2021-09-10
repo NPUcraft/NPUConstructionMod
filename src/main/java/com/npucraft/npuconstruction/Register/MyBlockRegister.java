@@ -1705,4 +1705,7 @@ public class MyBlockRegister {
 
     public static final ARJ ARJ = Registry.register(Registry.BLOCK,
             new Identifier("npu", "arj"), new ARJ());
+
+//    public static final Building BUILDING = Registry.register(Registry.BLOCK,
+//            new Identifier("npu", "building"), new Building());
 }
